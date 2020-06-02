@@ -5,7 +5,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0-beta2</Version>
+    <Version>1.0.0-beta3</Version>
     <Description>Basic functionality for PX components</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/statisticssweden/PCAxis.PX.Core</PackageProjectUrl>
@@ -18,9 +18,13 @@
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="PCAxis.Common" Version="1.0.0-beta4" />
-    <PackageReference Include="PCAxis.Core" Version="1.0.0-beta4" />
-    <PackageReference Include="PCAxis.Menu" Version="1.0.0-beta2" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="PCAxis.Common" Version="1.0.0-beta5" />
+    <PackageReference Include="PCAxis.Core" Version="1.0.0-beta5" />
+    <PackageReference Include="PCAxis.Menu" Version="1.0.0-beta4" />
     <PackageReference Include="Ude.NetStandard" Version="1.2.0" />
   </ItemGroup>
 
